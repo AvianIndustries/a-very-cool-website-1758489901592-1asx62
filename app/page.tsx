@@ -1,16 +1,12 @@
-export default function Home() {
+import Link from 'next/link'
+import { HeroSection, WhaleFacts, Footer } from '../components'
+
+export default function HomePage() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
-      <div className="container mx-auto px-4 py-16">
-        <div className="text-center">
-          <h1 className="text-4xl font-bold text-gray-900 mb-6">
-            a very cool website
-          </h1>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            A modern marketing website: make me a website about whales
-          </p>
-        </div>
-      </div>
-    </main>
+    <div className="flex flex-col min-h-screen">
+      <HeroSection />
+      <WhaleFacts />
+      <Footer />
+    </div>
   )
 }
